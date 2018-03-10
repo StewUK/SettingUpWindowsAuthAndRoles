@@ -3,6 +3,10 @@
 -- Edit Program.cs (CreateWebHostBuilder method)
 
 ```
+using Microsoft.AspNetCore.Server.HttpSys;
+```
+
+```
             WebHost.CreateDefaultBuilder(args)
                 .UseHttpSys(options =>  
                 {  
@@ -14,6 +18,11 @@
 ```
 
 -- Edit Startup.cs (ConfigureServices method)
+
+```
+using Microsoft.AspNetCore.Server.IISIntegration;
+using Microsoft.AspNetCore.Server.HttpSys;
+```
 
 ```
             services.AddAuthentication(IISDefaults.AuthenticationScheme);  
