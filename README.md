@@ -36,6 +36,12 @@ using Microsoft.AspNetCore.Server.HttpSys;
             });
 ```
 
+-- FOR DEV - Edit Startup.cs (Configure method)
+
+```
+// app.UseHttpsRedirection();
+```
+
 -- Edit Controller to add Authorize (depending on role/policy)
 https://docs.microsoft.com/en-us/aspnet/core/security/authorization/views?tabs=aspnetcore2x
 ```
